@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Soft horizon photography placeholder</title>
+  <desc id="desc">A pastel landscape scene with layered hills and a calm horizon.</desc>
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfeaf8"/>
+      <stop offset="0.45" stop-color="#f7e8d7"/>
+      <stop offset="1" stop-color="#eef7f4"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#wash)"/>
+  <circle cx="270" cy="230" r="115" fill="#fff5cc" opacity="0.78"/>
+  <path d="M0 555 C190 480 320 480 510 560 C690 635 850 515 1010 560 C1160 600 1285 535 1400 500 L1400 900 L0 900 Z" fill="#7ea094" opacity="0.55"/>
+  <path d="M0 660 C210 575 390 670 600 625 C810 580 1000 700 1400 595 L1400 900 L0 900 Z" fill="#4f857c" opacity="0.62"/>
+  <path d="M0 745 C250 720 360 760 560 720 C760 685 920 790 1400 710 L1400 900 L0 900 Z" fill="#263238" opacity="0.28"/>
+  <g stroke="#ffffff" stroke-width="4" opacity="0.45">
+    <path d="M90 610 C180 590 230 635 320 615"/>
+    <path d="M740 620 C840 590 910 655 1040 615"/>
+    <path d="M1120 700 C1200 680 1260 720 1330 690"/>
+  </g>
+  <rect width="1400" height="900" filter="url(#grain)" opacity="0.45"/>
+</svg>

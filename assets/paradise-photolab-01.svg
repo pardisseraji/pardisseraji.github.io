@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">City light photography placeholder</title>
+  <desc id="desc">A soft pastel city scene with window light and evening tones.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7dfe5"/>
+      <stop offset="0.55" stop-color="#dfeaf8"/>
+      <stop offset="1" stop-color="#d9e9de"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#sky)"/>
+  <circle cx="1080" cy="190" r="90" fill="#fff7d6" opacity="0.72"/>
+  <g opacity="0.86">
+    <rect x="120" y="350" width="210" height="430" fill="#445b62"/>
+    <rect x="375" y="290" width="250" height="490" fill="#526c70"/>
+    <rect x="690" y="420" width="180" height="360" fill="#40575c"/>
+    <rect x="930" y="330" width="290" height="450" fill="#5a7375"/>
+  </g>
+  <g fill="#ffeab6" opacity="0.88">
+    <rect x="160" y="390" width="38" height="52"/>
+    <rect x="240" y="490" width="38" height="52"/>
+    <rect x="420" y="345" width="42" height="58"/>
+    <rect x="520" y="520" width="42" height="58"/>
+    <rect x="735" y="480" width="34" height="50"/>
+    <rect x="1000" y="390" width="46" height="62"/>
+    <rect x="1110" y="560" width="46" height="62"/>
+  </g>
+  <path d="M0 760 C260 700 440 820 690 745 C900 680 1080 720 1400 650 L1400 900 L0 900 Z" fill="#263238" opacity="0.32"/>
+  <rect width="1400" height="900" filter="url(#grain)" opacity="0.45"/>
+</svg>
